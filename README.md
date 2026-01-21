@@ -2,7 +2,7 @@
 
 Библиотека за обработка на изображения, която може да работи с различни графични формати (JPEG, PNG, BMP) и прилага различни трансформации върху тях. За момента съдържа функционалност за конвертиране на цветно изображение в черно-бяло и възможност за откриване на ръбовете в изображение.
 
-![Maserati Edge Detected](.\resources\07.12-maserati-edge-detected.png)
+![Maserati Edge Detected](./resources/banner.png)
 
 Библиотеката има два основни компонента:
 
@@ -16,7 +16,7 @@
 Интерфейсът `ImageAlgorithm` представлява алгоритъм за обработка на изображения.
 
 ```java
-package bg.sofia.uni.fmi.mjt.imagekit.algorithm;
+package kg.projects.image.editor.imagekit.algorithm;
 
 import java.awt.image.BufferedImage;
 
@@ -54,7 +54,7 @@ public interface GrayscaleAlgorithm extends ImageAlgorithm {
 Интерфейсът `EdgeDetectionAlgorithm` е друг маркерен интерфейс, този път за алгоритми за откриване на ръбове.
 
 ```java
-package bg.sofia.uni.fmi.mjt.imagekit.algorithm.detection;
+package kg.projects.image.editor.imagekit.algorithm.detection;
 
 import algorithm.kg.projects.imageEditor.imagekit.ImageAlgorithm;
 
@@ -67,7 +67,7 @@ public interface EdgeDetectionAlgorithm extends ImageAlgorithm {
 Интерфейсът `FileSystemImageManager` управлява зареждането и съхраняването на изображения от файловата система.
 
 ```java
-package bg.sofia.uni.fmi.mjt.imagekit.filesystem;
+package kg.projects.image.editor.imagekit.filesystem;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -209,7 +209,7 @@ fsImageManager.saveImage(edgeDetectedImage, new File("kitten-edge-detected.png")
 
 ```
 src
-└── bg.sofia.uni.fmi.mjt.imagekit
+└── kg.projects.image.editor.imagekit
     ├── algorithm
     │   ├── detection
     │   │   ├── EdgeDetectionAlgorithm.java
@@ -226,6 +226,6 @@ src
     └── (...)
 
 test
-└── bg.sofia.uni.fmi.mjt.imagekit
+└── kg.projects.image.editor.imagekit
      └── (...)
 ```
