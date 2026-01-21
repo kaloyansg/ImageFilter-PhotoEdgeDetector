@@ -41,7 +41,7 @@ public interface ImageAlgorithm {
 Интерфейсът `GrayscaleAlgorithm` е маркерен интерфейс за алгоритми за конвертиране в черно-бяло изображение.
 
 ```java
-package bg.sofia.uni.fmi.mjt.imagekit.algorithm.grayscale;
+package kg.projects.image.editor.imagekit.algorithm.grayscale;
 
 import algorithm.kg.projects.imageEditor.imagekit.ImageAlgorithm;
 
